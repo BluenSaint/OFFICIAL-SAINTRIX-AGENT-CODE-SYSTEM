@@ -167,11 +167,11 @@ export default function SaintrixLandingPage() {
 
           {/* Main Headline */}
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Fix Your Credit Fast —{" "}
+            Elevate Your Credit:{" "}
             <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">
-              With the Power of AI
+              AI-Powered Restoration
             </span>{" "}
-            and the Law
+            for Lasting Financial Health
           </h1>
 
           {/* Subheadline */}

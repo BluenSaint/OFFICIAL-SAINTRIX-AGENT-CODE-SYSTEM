@@ -1,5 +1,5 @@
-import SaintrixClientPortal from "../client-portal"
+import SaintrixLandingPage from "../landing-page"
 
 export default function Page() {
-  return <SaintrixClientPortal />
+  return <SaintrixLandingPage />
 }
