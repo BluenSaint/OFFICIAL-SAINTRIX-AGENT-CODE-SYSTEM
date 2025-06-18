@@ -176,8 +176,8 @@ export default function SaintrixLandingPage() {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            SAINTRIX scans your credit report, finds legal violations, and files custom disputes automatically. You just
-            upload, relax, and watch your score rise.
+            SAINTRIX leverages advanced AI to meticulously identify and dispute inaccuracies on your credit report,
+            automating your path to a stronger financial foundation.
           </p>
 
           {/* CTA Buttons */}
@@ -186,7 +186,7 @@ export default function SaintrixLandingPage() {
               size="lg"
               className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-200"
             >
-              Get Started – Fix My Credit
+              Start Your Credit Elevation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
@@ -226,7 +226,9 @@ export default function SaintrixLandingPage() {
       <section className="py-16 bg-slate-800/30">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <p className="text-slate-400 text-lg mb-8">Trusted by 500+ people who fixed their credit the right way</p>
+            <p className="text-slate-400 text-lg mb-8">
+              Trusted by hundreds of individuals achieving significant credit improvements.
+            </p>
             <div className="flex items-center justify-center space-x-8 opacity-60">
               <div className="text-slate-400 font-semibold">Supabase</div>
               <div className="text-slate-400 font-semibold">Vercel</div>
@@ -244,7 +246,8 @@ export default function SaintrixLandingPage() {
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">How It Works</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Three simple steps to transform your credit score with the power of AI and legal expertise
+              Our streamlined process: three strategic steps leveraging AI and legal expertise to optimize your credit
+              profile.
             </p>
           </div>
 
@@ -258,7 +261,14 @@ export default function SaintrixLandingPage() {
                     </div>
                     <div className="text-6xl font-bold text-orange-400 mb-4">{step.number}</div>
                     <h3 className="text-xl font-bold text-white mb-4">{step.title}</h3>
-                    <p className="text-slate-300 leading-relaxed">{step.description}</p>
+                    <p className="text-slate-300 leading-relaxed">
+                      {index === 0 &&
+                        "Securely upload your credit report or connect via Credit Karma for comprehensive analysis."}
+                      {index === 1 &&
+                        "Our AI meticulously scans your report, identifying outdated entries, FCRA violations, and reporting discrepancies."}
+                      {index === 2 &&
+                        "Automated, legally-backed dispute letters are generated and dispatched, ensuring consistent and timely action."}
+                    </p>
                   </CardContent>
                 </Card>
                 {index < steps.length - 1 && (
@@ -276,9 +286,10 @@ export default function SaintrixLandingPage() {
       <section className="py-24 bg-slate-900">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">What Your Dashboard Looks Like</h2>
+            <h2 className="text-5xl font-bold text-white mb-6">Your Personalized Credit Dashboard</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Get a real-time view of your credit repair progress with our intuitive client portal
+              Gain real-time insights into your credit repair journey through our intuitive and comprehensive client
+              portal.
             </p>
           </div>
 
@@ -298,19 +309,19 @@ export default function SaintrixLandingPage() {
                   <Card className="bg-slate-800/50 border-slate-700">
                     <CardContent className="p-6 text-center">
                       <div className="text-3xl font-bold text-white mb-2">5</div>
-                      <div className="text-slate-400">Disputes Filed</div>
+                      <div className="text-slate-400">Disputes Initiated</div>
                     </CardContent>
                   </Card>
                   <Card className="bg-slate-800/50 border-slate-700">
                     <CardContent className="p-6 text-center">
                       <div className="text-3xl font-bold text-green-400 mb-2">3</div>
-                      <div className="text-slate-400">Items Removed</div>
+                      <div className="text-slate-400">Items Resolved</div>
                     </CardContent>
                   </Card>
                   <Card className="bg-slate-800/50 border-slate-700">
                     <CardContent className="p-6 text-center">
                       <div className="text-3xl font-bold text-orange-400 mb-2">2</div>
-                      <div className="text-slate-400">In Progress</div>
+                      <div className="text-slate-400">Active Disputes</div>
                     </CardContent>
                   </Card>
                 </div>
@@ -320,15 +331,15 @@ export default function SaintrixLandingPage() {
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3">
                       <CheckCircle className="h-5 w-5 text-green-400" />
-                      <span className="text-slate-300">Capital One collection removed</span>
+                      <span className="text-slate-300">Capital One collection successfully removed</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Clock className="h-5 w-5 text-yellow-400" />
-                      <span className="text-slate-300">Dispute letter sent to Experian</span>
+                      <span className="text-slate-300">Dispute letter dispatched to Experian</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Brain className="h-5 w-5 text-blue-400" />
-                      <span className="text-slate-300">AI generated new dispute strategy</span>
+                      <span className="text-slate-300">AI-driven dispute strategy generated</span>
                     </div>
                   </div>
                 </div>
@@ -344,7 +355,8 @@ export default function SaintrixLandingPage() {
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Choose Your Plan</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Select the perfect plan for your credit repair journey. All plans include our AI-powered dispute system.
+              Select the optimal plan for your credit restoration journey. All tiers feature our advanced AI-powered
+              dispute system.
             </p>
           </div>
 
@@ -369,7 +381,11 @@ export default function SaintrixLandingPage() {
                     <span className="text-4xl font-bold text-white">{plan.price}</span>
                     <span className="text-slate-400 ml-1">{plan.period}</span>
                   </div>
-                  <p className="text-slate-400">{plan.description}</p>
+                  <p className="text-slate-400">
+                    {plan.name === "Basic" && "Personal Credit Restoration (Manual Uploads)"}
+                    {plan.name === "Standard" && "AI-Powered Disputes & Autopilot"}
+                    {plan.name === "Pro" && "Comprehensive Credit Solutions & Priority Review"}
+                  </p>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3 mb-8">
@@ -399,7 +415,7 @@ export default function SaintrixLandingPage() {
               onClick={() => setShowLegacyCode(!showLegacyCode)}
               className="text-orange-400 hover:text-orange-300 underline"
             >
-              Have a Legacy Access Code?
+              Access with a Legacy Code?
             </button>
             {showLegacyCode && (
               <div className="mt-4 max-w-md mx-auto">
@@ -419,7 +435,7 @@ export default function SaintrixLandingPage() {
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Powerful Features</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Everything you need to repair your credit, powered by cutting-edge AI and legal expertise
+              Comprehensive tools for credit optimization, driven by cutting-edge AI and legal precision.
             </p>
           </div>
 
@@ -446,9 +462,12 @@ export default function SaintrixLandingPage() {
       <section className="py-24 bg-gradient-to-b from-slate-800 to-slate-900">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">How is this legal?</h2>
+            <h2 className="text-5xl font-bold text-white mb-6">
+              Our Legal Framework: Ensuring Compliance and Integrity
+            </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              We operate within the bounds of consumer protection law, ensuring every dispute is legally sound
+              Operating strictly within consumer protection laws, we ensure every dispute is legally robust and
+              ethically sound.
             </p>
           </div>
 
@@ -456,31 +475,37 @@ export default function SaintrixLandingPage() {
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
                 <Shield className="h-12 w-12 text-orange-400 mx-auto mb-4" />
-                <h3 className="text-lg font-bold text-white mb-2">FCRA Compliant</h3>
+                <h3 className="text-lg font-bold text-white mb-2">FCRA Adherence</h3>
                 <p className="text-slate-400 text-sm">
-                  We cite real consumer protection laws (FCRA §§ 609, 611, 1681s)
+                  Our methodology rigorously cites relevant consumer protection statutes (FCRA §§ 609, 611, 1681s).
                 </p>
               </CardContent>
             </Card>
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
                 <FileText className="h-12 w-12 text-orange-400 mx-auto mb-4" />
-                <h3 className="text-lg font-bold text-white mb-2">Data-Driven</h3>
-                <p className="text-slate-400 text-sm">All disputes are based on actual credit report data</p>
+                <h3 className="text-lg font-bold text-white mb-2">Data-Validated Disputes</h3>
+                <p className="text-slate-400 text-sm">
+                  Every dispute is meticulously validated against your actual credit report data.
+                </p>
               </CardContent>
             </Card>
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
                 <Eye className="h-12 w-12 text-orange-400 mx-auto mb-4" />
-                <h3 className="text-lg font-bold text-white mb-2">Full Control</h3>
-                <p className="text-slate-400 text-sm">You review every letter before it's sent</p>
+                <h3 className="text-lg font-bold text-white mb-2">Client Oversight</h3>
+                <p className="text-slate-400 text-sm">
+                  Maintain full oversight: review and approve every dispute letter prior to dispatch.
+                </p>
               </CardContent>
             </Card>
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
                 <CheckCircle className="h-12 w-12 text-orange-400 mx-auto mb-4" />
-                <h3 className="text-lg font-bold text-white mb-2">Transparent</h3>
-                <p className="text-slate-400 text-sm">No guarantees — just legal accuracy and full transparency</p>
+                <h3 className="text-lg font-bold text-white mb-2">Unwavering Transparency</h3>
+                <p className="text-slate-400 text-sm">
+                  We offer legal accuracy and complete transparency, not guarantees.
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -490,10 +515,12 @@ export default function SaintrixLandingPage() {
       {/* Email Signup */}
       <section className="py-24 bg-slate-900">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Not ready yet?</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Explore Further?</h2>
           <p className="text-xl text-slate-300 mb-8">
-            Get our free guide:{" "}
-            <span className="text-orange-400 font-semibold">5 Credit Report Mistakes You Can Legally Remove Today</span>
+            Download our complimentary guide:{" "}
+            <span className="text-orange-400 font-semibold">
+              5 Credit Report Inaccuracies You Can Legally Address Today
+            </span>
           </p>
           <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <Input
@@ -508,7 +535,7 @@ export default function SaintrixLandingPage() {
               type="submit"
               className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white px-6 py-2 font-semibold rounded-xl"
             >
-              Send My Free Guide
+              Receive Your Free Guide
             </Button>
           </form>
         </div>
@@ -517,15 +544,15 @@ export default function SaintrixLandingPage() {
       {/* Final CTA Banner */}
       <section className="py-24 bg-gradient-to-r from-orange-500 to-yellow-500">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-bold text-white mb-6">Ready to take control of your credit?</h2>
+          <h2 className="text-5xl font-bold text-white mb-6">Ready to Transform Your Financial Future?</h2>
           <p className="text-xl text-white/90 mb-8">
-            Join hundreds of people who've already transformed their financial future with SAINTRIX
+            Join a growing community who have successfully elevated their financial standing with SAINTRIX.
           </p>
           <Button
             size="lg"
             className="bg-white text-orange-600 hover:bg-slate-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-200"
           >
-            Start Your Credit Repair Journey
+            Initiate Your Credit Transformation
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
@@ -543,8 +570,8 @@ export default function SaintrixLandingPage() {
                 <span className="text-2xl font-bold text-white">SAINTRIX</span>
               </div>
               <p className="text-slate-400 mb-6 max-w-md">
-                AI-powered credit repair that's legally compliant, transparent, and effective. Take control of your
-                financial future today.
+                SAINTRIX: AI-powered credit restoration, legally compliant, transparent, and highly effective. Empower
+                your financial future.
               </p>
               <div className="flex space-x-4">
                 <Instagram className="h-6 w-6 text-slate-400 hover:text-orange-400 cursor-pointer transition-colors" />
